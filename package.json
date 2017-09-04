@@ -18,6 +18,7 @@
     "is-windows": "^1.0.1",
     "junit-report-builder": "^1.2.0",
     "lodash.get": "^4.4.2",
+    "lodash.pick": "^4.4.0",
     "os-locale": "^2.1.0",
     "string-width": "^2.1.1",
     "term-size": "^1.2.0",

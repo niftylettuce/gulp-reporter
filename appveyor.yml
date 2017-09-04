@@ -19,7 +19,7 @@ install:
 # to run your custom scripts instead of automatic tests
 test_script:
   - npm run shorturl
-  - 7z a shorturl.zip lib/*.json
+  - 7z a shorturl.zip lib/*.json lint-reports
   - appveyor PushArtifact shorturl.zip
   - npm test
 
