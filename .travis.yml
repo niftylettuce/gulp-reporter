@@ -12,7 +12,7 @@ node_js:
   - 7
   - 6
 
-after_success:
+after_script:
   - greenkeeper-lockfile-upload
   - npm run report-coverage
   - sonar-scanner
