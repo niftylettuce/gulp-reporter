@@ -18,11 +18,10 @@ install:
 
 # to run your custom scripts instead of automatic tests
 test_script:
-  - npm run shorturl
   - npm test
 
 # to run your custom scripts instead of provider deployments
-after_test:
+deploy_script:
   - npm run report-coverage
-  - 7z a shorturl.zip lib/*.json lint-reports
+  - 7z a shorturl.zip lib/*.json
   - appveyor PushArtifact shorturl.zip
