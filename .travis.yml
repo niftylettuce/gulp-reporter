@@ -14,10 +14,13 @@ node_js:
   - 6
 
 after_script:
-  - cat $SONAR_SCANNER_HOME/conf/sonar-scanner.properties
   - greenkeeper-lockfile-upload
   - npm run report-coverage
-  - sonar-scanner
+  - sonar-scanner \
+    -Dsonar.projectKey=gulp-reporter \
+    -Dsonar.sources=. \
+    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.organization=gucong3000-github
 
 cache:
   directories:
