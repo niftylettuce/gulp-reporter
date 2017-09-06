@@ -16,12 +16,7 @@ node_js:
 after_script:
   - greenkeeper-lockfile-upload
   - npm run report-coverage
-  - sonar-scanner \
-    -Dsonar.projectKey=gulp-reporter \
-    -Dsonar.host.url=https://sonarcloud.io \
-    -Dsonar.organization=gucong3000-github \
-    -Dsonar.sourceEncoding=UTF-8
-
+  - "sonar-scanner -Dsonar.projectKey=gulp-reporter -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=gucong3000-github -Dsonar.sourceEncoding=UTF-8"
 
 cache:
   directories:
