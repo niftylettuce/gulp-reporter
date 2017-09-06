@@ -18,9 +18,10 @@ after_script:
   - npm run report-coverage
   - sonar-scanner \
     -Dsonar.projectKey=gulp-reporter \
-    -Dsonar.sources=. \
     -Dsonar.host.url=https://sonarcloud.io \
-    -Dsonar.organization=gucong3000-github
+    -Dsonar.organization=gucong3000-github \
+    -Dsonar.sourceEncoding=UTF-8
+
 
 cache:
   directories:
